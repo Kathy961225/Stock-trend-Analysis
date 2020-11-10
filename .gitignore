@@ -1,0 +1,6 @@
+# data
+*.csv
+*.zip
+
+# jupyter notebook
+data/.ipynb_checkpoints/*
