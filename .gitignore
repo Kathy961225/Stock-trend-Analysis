@@ -1,6 +1,8 @@
 # data
-*.csv
 *.zip
 
 # jupyter notebook
 data/.ipynb_checkpoints/*
+
+.DS_Store
+*.DS_Store
