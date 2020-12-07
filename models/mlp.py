@@ -2,7 +2,9 @@ import tensorflow as tf
 from tensorflow import keras
 from models.layers import *
 from utils.metrics import *
-from config import args 
+from config import CONFIG_TGCN
+
+cfg = CONFIG_TGCN()
 
 
 class MLP(keras.Model):
@@ -22,7 +24,7 @@ class MLP(keras.Model):
     def _loss(self):
         # Weight decay loss
         for var in self.layers[0].vars.values():
-            self.loss += args.weight_decay * tf.nn.l2_loss(var)
+            self.loss += cfg.weight_decay * tf.nn.l2_loss(var)
 
         # Cross entropy error
         self.loss += masked_softmax_cross_entropy(self.outputs, self.placeholders['labels'],
@@ -34,14 +36,14 @@ class MLP(keras.Model):
 
     def _build(self):
         self.layers.append(Dense(input_dim=self.input_dim,
-                                 output_dim=args.hidden1,
+                                 output_dim=cfg.hidden1,
                                  placeholders=self.placeholders,
                                  act=tf.nn.relu,
                                  dropout=True,
                                  sparse_inputs=True,
                                  logging=self.logging))
 
-        self.layers.append(Dense(input_dim=args.hidden1,
+        self.layers.append(Dense(input_dim=cfg.hidden1,
                                  output_dim=self.output_dim,
                                  placeholders=self.placeholders,
                                  act=lambda x: x,

@@ -2,7 +2,9 @@ from utils.inits import *
 import tensorflow as tf
 from tensorflow import keras
 from tensorflow.keras import layers
-from config import args
+from config import CONFIG_TGCN
+
+cfg = CONFIG_TGCN()
 
 
 
