@@ -37,22 +37,22 @@ python train_bert.py <dataset>
 
 ## Results
 
-<p style="text-align: center;" width="100%">
-<img src="images/acc.png" alt="acc" style="zoom:40%;" />
+<p align="center">
+<img src="images/acc.png" alt="acc" width="60%" height="60%" />
 </p>
 
 ## Architecture
 
 GCN model:
 
-<p style="text-align: center;" width="100%">
-<img src="images/gcn.png" alt="gcn" style="zoom:50%;" />
+<p align="center">
+<img src="images/gcn.png" alt="gcn" width="70%" height="70%" />
 </p>
 
 BERT model:
 
-<p style="text-align: center;" width="100%">
-<img src="images/bert.png" alt="bert" style="zoom:50%; text-align: center;" />
+<p align="center">
+<img src="images/bert.png" alt="bert" width="20%" height="20%"/>
 </p>
 
 ## Contributors
