@@ -35,15 +35,25 @@ For BERT model:
 python train_bert.py <dataset>
 ```
 
+## Results
+
+<p style="text-align: center;" width="100%">
+<img src="images/acc.png" alt="acc" style="zoom:40%;" />
+</p>
+
 ## Architecture
 
 GCN model:
 
+<p style="text-align: center;" width="100%">
 <img src="images/gcn.png" alt="gcn" style="zoom:50%;" />
+</p>
 
 BERT model:
 
-<img src="images/bert.png" alt="bert" style="zoom:50%;" />
+<p style="text-align: center;" width="100%">
+<img src="images/bert.png" alt="bert" style="zoom:50%; text-align: center;" />
+</p>
 
 ## Contributors
 
