@@ -47,8 +47,6 @@ BERT model:
 
 ## Contributors
 
-\* [Yuan Li](yl6606@nyu.edu)
-
-\* [Dongzi Qi](dq394@nyu.edu)
-
-\- [Mengqi Wu](mw4259@nyu.edu)
+- [Yuan Li](yl6606@nyu.edu)
+- [Dongzi Qi](dq394@nyu.edu)
+- [Mengqi Wu](mw4259@nyu.edu)
